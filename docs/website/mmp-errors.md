@@ -118,6 +118,14 @@ This warning won't affect the application being built, however you might not be 
 
 Please report this issue to the publisher of the assembly package (e.g. nuget author) so this can be fixed in their future releases.
 
+### <a name="MM0130"/>MM0130: No assemblies found. You should provide at least one assembly.
+
+When running --runregistrar, at least one assembly should be provided.
+
+### <a name="MM0131"/>MM0131: Product assembly '{0}' not found in assembly list: '{1}'
+
+When running --runregistrar, the assembly list should include the product assembly, Xamarin.Mac, XamMac.
+
 
 # MM1xxx: file copy / symlinks (project related)
 
