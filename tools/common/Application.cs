@@ -484,6 +484,9 @@ namespace Xamarin.Bundler {
 				FrameworkDirectory = Driver.GetPlatformFrameworkDirectory (this),
 				RootDirectory = Path.GetDirectoryName (RootAssembly),
 			};
+#if MMP
+			resolver.ExtraSearchDirectories.AddRange (Driver.ExtraSearchDirectories);
+#endif
 
 			if (Platform == ApplePlatform.iOS || Platform == ApplePlatform.MacOSX) {
 				if (Is32Build) {
