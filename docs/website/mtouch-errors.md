@@ -646,6 +646,10 @@ When running --runregistrar, at least one root assembly should be provided.
 
 When running --runregistrar, the assembly list should include the product assembly, Xamarin.iOS, Xamarin.WatchOS, Xamarin.TVOS.
 
+### <a name="MT0132"/>MT0132: Found more than 1 assembly matching '{0}' choosing first: '{1}'
+
+When using --recursive-directories, only 1 assembly should match
+
 # MT1xxx: Project related error messages
 
 ### MT10xx: Installer / mtouch

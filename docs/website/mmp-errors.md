@@ -126,6 +126,9 @@ When running --runregistrar, at least one root assembly should be provided.
 
 When running --runregistrar, the assembly list should include the product assembly, Xamarin.Mac, XamMac.
 
+### <a name="MM0132"/>MM0132: Found more than 1 assembly matching '{0}' choosing first: '{1}'
+
+When using --recursive-directories, only 1 assembly should match
 
 # MM1xxx: file copy / symlinks (project related)
 
