@@ -497,6 +497,7 @@ app_initialize (xamarin_initialize_data *data)
 		
 #ifdef DYNAMIC_MONO_RUNTIME
 		config_path = [[NSString stringWithUTF8String: mono_runtime_prefix] stringByAppendingPathComponent: @"/etc/mono/config"];
+		machine_config_path = [[NSString stringWithUTF8String: mono_runtime_prefix] stringByAppendingPathComponent: @"etc/mono/4.5/machine.config"];
 #else
 		config_path = [[NSString stringWithUTF8String: xamarin_get_bundle_path ()] stringByAppendingPathComponent: @"config"];
 		machine_config_path = [[NSString stringWithUTF8String: xamarin_get_bundle_path ()] stringByAppendingPathComponent: @"machine.config"];
